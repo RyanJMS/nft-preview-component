@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1a2d;
+  font-family: "outfit";
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.container {
+  vertical-align: middle;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #15273f;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.crypto {
+  border-radius: 25px;
+  height: 80%;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #00b6b7;
+  border-radius: 10px;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.image-container:hover .overlay + .view {
+  display: block;
+}
+
+.price,
+.time-left,
+.avatar,
+.author {
+  display: inline-flex;
+}
+
+.price {
+  color: #00b6b7;
+}
+
+.time-left {
+  color: #8bacd9;
+  float: right;
+}
+
+h1 {
+  color: #fbfaf9;
+  text-align: center;
+}
+
+.creation {
+  color: #647da0;
+}
+
+.description {
+  color: #647da0;
+  align-items: center;
+  text-align: left;
+}
+
+.author {
+  color: #fbfaf9;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #e7eef2;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.attribution {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  align-self: flex-end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.title a,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #00b6b7;
+}
