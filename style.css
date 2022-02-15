@@ -34,7 +34,6 @@ body {
   border-radius: 25px;
   height: 80%;
   width: 100%;
-  padding: 15px;
   cursor: pointer;
 }
 
@@ -52,8 +51,8 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
+  border-radius: 25px;
   background-color: #00b6b7;
-  border-radius: 10px;
   transition: all 0.25s ease;
 }
 
@@ -86,6 +85,10 @@ body {
   color: #00b6b7;
 }
 
+.price-title {
+  padding-left: 10px;
+}
+
 .time-left {
   color: #8bacd9;
   float: right;
@@ -108,6 +111,10 @@ h1 {
 
 .author {
   color: #fbfaf9;
+}
+
+.author:hover {
+  color: #00b6b7;
 }
 
 .avatar {
